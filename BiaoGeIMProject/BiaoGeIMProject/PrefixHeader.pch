@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  BiaoGeIMProject
+//
+//  Created by ljy-335 on 14-10-31.
+//  Copyright (c) 2014年 edu. All rights reserved.
+//
+
+#ifndef BiaoGeIMProject_PrefixHeader_pch
+#define BiaoGeIMProject_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import "UIView+Ext.h"
+#import "NSString+Common.h"
+#import "DDLog.h"
+#import "Common.h"
+#import "HYBUIMaker.h"
+#import "Define.h"
+#import "HYBHttpRequest.h"
+#import "HYBHttpManager.h"
+#import "Server.h"
+
+#endif
