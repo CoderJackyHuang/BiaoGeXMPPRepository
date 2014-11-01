@@ -14,12 +14,7 @@
  */
 @interface HYBLoadImageView : UIImageView
 
-// 获取或设置是否显示转圈圈
-@property (nonatomic, assign) BOOL showLoading;
-
-// default is showLoading = NO
-- (id)initWithFrame:(CGRect)frame;
-- (id)initWithFrame:(CGRect)frame showLoading:(BOOL)showLoading;
+@property (nonatomic, assign) BOOL isCircle;
 
 /*!
  * @brief 根据图片网址来请求图片

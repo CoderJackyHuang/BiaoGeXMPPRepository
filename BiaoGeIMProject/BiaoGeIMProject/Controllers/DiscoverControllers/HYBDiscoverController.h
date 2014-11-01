@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 edu. All rights reserved.
 //
 
-#import "HYBBaseController.h"
+#import "HYBRefreshController.h"
 
-@interface HYBDiscoverController : HYBBaseController
+@interface HYBDiscoverController : HYBRefreshController
 
 @end

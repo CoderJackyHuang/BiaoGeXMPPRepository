@@ -13,4 +13,9 @@
 #define kXMPPDomain @"www.aiktv.co" // OpenFire配置的IM服务器名
 #define kXMPPHost @"www.aiktv.co"   // 主机名
 
+
+
+#define kNetworkErrorMsg @"Network error, please check!"
+#define kLoadDataErrorMsg @"An error occured from sever!"
+
 #endif

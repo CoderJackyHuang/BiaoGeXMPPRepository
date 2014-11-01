@@ -14,7 +14,7 @@
 #define kUserPasswordKey  @"kUserPasswordKey"
 #define kUserNicknameKey  @"kUserNicknameKey"
 #define kUserHeadImageKey @"kUserHeadImageKey"
-#define kUserLoginPhoneKey @"kUserLoginPhoneKey"
+#define kUserLoginNameKey @"kUserLoginNameKey"
 
 // 通知
 #define kXMPPNewMsgNotifiction @"kXMPPNewMsgNotifiction"

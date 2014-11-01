@@ -39,10 +39,25 @@ if (errorBlock) { \
  */
 + (NSError*)errorWithMessage:(NSString *)errorMessage;
 
+/*!
+ * @brief login request
+ * @method POST
+ */
 typedef void (^HYBLoginBlock)(BOOL isSuccess);
 + (HYBHttpRequest *)loginWithPath:(NSString *)path
                            params:(NSDictionary *)params
                        completion:(HYBLoginBlock)completion
                             error:(HYBErrorBlock)errorBlock;
+
+/*!
+ * @brief register request
+ * @method POST
+ */
+typedef void (^HYBRegisterBlock)(BOOL isSuccess, NSString *errorMsg);
++ (HYBHttpRequest *)registerWithPath:(NSString *)path
+                           params:(NSDictionary *)params
+                       completion:(HYBRegisterBlock)completion
+                            error:(HYBErrorBlock)errorBlock;
+
 
 @end

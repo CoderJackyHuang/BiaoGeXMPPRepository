@@ -11,13 +11,15 @@
 
 /*!
  * @brief 最顶层控制器基类，所有控制器类都需要直接或间接继承于此类
- * 
+ *
  * @author huangyibiao
  */
 @interface HYBBaseController : UIViewController {
-    @protected
+@protected
     HYBKeyboardScrollView *_keyboardScrollView;
     CGFloat               _originY;
+    
+    HYBHttpRequest *_httpRequest;    
 }
 
 - (instancetype)initWithKeyboardScrollViewAsBackgroundView:(BOOL)asBackgroundView;

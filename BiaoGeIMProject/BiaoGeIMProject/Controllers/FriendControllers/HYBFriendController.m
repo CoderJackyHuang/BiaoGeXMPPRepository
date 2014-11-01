@@ -19,12 +19,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self addRightButtonWithTitle:@"login" action:@selector(onLogin)];
+}
+
+- (void)onLogin {
     HYBLoginController *login = [[HYBLoginController alloc] init];
     [login loginWithPresentController:self completion:^(BOOL isLoginSuccess) {
         if (isLoginSuccess) {
             
         }
     }];
+ 
 }
 
 - (void)didReceiveMemoryWarning {

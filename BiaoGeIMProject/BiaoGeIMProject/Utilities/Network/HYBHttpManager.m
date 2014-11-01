@@ -53,12 +53,65 @@
             } else {
                 BOOL isSuccess = NO;
                 if ([data isKindOfClass:[NSDictionary class]]) {
-                     NSDictionary *dataDict = (NSDictionary *)data;
-                    NSLog(@"%@", dataDict);
-                    isSuccess = YES;
+                     NSDictionary *dataDict = [(NSDictionary *)data objectForKey:@"data"];
+                    
+                    NSString *resultCode = [NSString stringWithFormat:@"%@", data[@"resultCode"]];
+                    if (resultCode.integerValue == 1) {// success
+                        if ([dataDict isKindOfClass:[NSDictionary class]]) {
+                            [kUserDefaults setObject:params[@"userName"] forKey:kUserLoginNameKey];
+                            [kUserDefaults setObject:params[@"userPassword"] forKey:kUserPasswordKey];
+                            [kUserDefaults setObject:dataDict[@"userId"] forKey:kUserIdKey];
+                            [kUserDefaults setObject:dataDict[@"userNickname"] forKey:kUserNicknameKey];
+                            [kUserDefaults setObject:dataDict[@"userHead"] forKey:kUserHeadImageKey];
+                            [kUserDefaults synchronize];
+                            isSuccess = YES;
+                        }
+                    }
                 }
                 dispatch_async(kMainThread, ^{
                     completion(isSuccess);
+                });
+            }
+        });
+    } isCache:NO isRefresh:YES];
+    return request;
+}
+
++  (HYBHttpRequest *)registerWithPath:(NSString *)path
+                               params:(NSDictionary *)params
+                           completion:(HYBRegisterBlock)completion
+                                error:(HYBErrorBlock)errorBlock {
+    path = [NSString stringWithFormat:@"%@%@", kBaseURL, path];
+    kRequest params:params completion:^(NSData *downloadData, NSError *error) {
+        if (error) {
+            errorBlock(error);
+            return;
+        }
+        
+        dispatch_async(kGlobalThread, ^{
+            id data = [self parseDownloadData:downloadData];
+            if (data == nil) {
+                kBackToMainThreadError
+            } else {
+                BOOL isSuccess = NO;
+                NSString *errorMsg = nil;
+                if ([data isKindOfClass:[NSDictionary class]]) {
+                    NSDictionary *dataDict = (NSDictionary *)data;
+                    
+                    NSString *resultCode = [NSString stringWithFormat:@"%@", data[@"resultCode"]];
+                    if (resultCode.integerValue == 1) {// success
+                        if ([dataDict isKindOfClass:[NSDictionary class]]) {
+                            [kUserDefaults setObject:params[@"userName"] forKey:kUserLoginNameKey];
+                            [kUserDefaults setObject:params[@"userPassword"] forKey:kUserPasswordKey];
+                            [kUserDefaults setObject:dataDict[@"gid"] forKey:kUserIdKey];
+                        [kUserDefaults synchronize];
+                            isSuccess = YES;
+                        }
+                    }
+                    errorMsg = dataDict[@"resultMsg"];
+                }
+                dispatch_async(kMainThread, ^{
+                    completion(isSuccess, errorMsg);
                 });
             }
         });

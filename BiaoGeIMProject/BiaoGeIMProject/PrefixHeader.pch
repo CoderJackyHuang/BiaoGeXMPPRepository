@@ -14,12 +14,12 @@
 #import <UIKit/UIKit.h>
 #import "UIView+Ext.h"
 #import "NSString+Common.h"
-#import "DDLog.h"
 #import "Common.h"
 #import "HYBUIMaker.h"
 #import "Define.h"
 #import "HYBHttpRequest.h"
 #import "HYBHttpManager.h"
 #import "Server.h"
+#import "ProgressHUD.h"
 
 #endif

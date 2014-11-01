@@ -8,11 +8,14 @@
 
 #import "HYBLoginController.h"
 #import "NSString+Common.h"
+#import "HYBRegisterController.h"
+#import "UIViewController+KNSemiModal.h"
 
 @interface HYBLoginController () {
     UITextField *_phoneTextField;
     UITextField *_passwordTextField;
     HYBLoginCompletion _loginCompletion;
+    HYBRegisterController *_registerController;
 }
 
 @end
@@ -30,7 +33,7 @@
     [super viewDidLoad];
     
     self.title = @"用户登录";
-     [self addLeftButtonWithTitle:@"返回" action:@selector(onBackButtonClicked)];
+    [self addLeftButtonWithTitle:@"返回" action:@selector(onBackButtonClicked)];
     [self addRightButtonWithTitle:@"注册" action:@selector(onRegisterButtonClicked)];
     
     /// 这里不做验证处理
@@ -53,10 +56,10 @@
     passwordLabel.textAlignment = NSTextAlignmentLeft;
     
     _passwordTextField = [HYBUIMaker textFieldWithFrame:CGRectMake(passwordLabel.rightX,
-                                                                passwordLabel.originY,
-                                                                kScreenWidth - passwordLabel.rightX - 20,
-                                                                passwordLabel.height)
-                                         placeholder:nil
+                                                                   passwordLabel.originY,
+                                                                   kScreenWidth - passwordLabel.rightX - 20,
+                                                                   passwordLabel.height)
+                                            placeholder:nil
                                                security:YES];
     [_keyboardScrollView addSubview:_passwordTextField];
     _passwordTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -64,10 +67,10 @@
     _passwordTextField.layer.borderWidth = 0.5;
     
     UIButton *loginButton = [HYBUIMaker buttonWithFrame:CGRectMake(10, _passwordTextField.bottomY + 30, kScreenWidth - 20, 40)
-                                         title:@"登录"
-                                        target:self
-                                        action:@selector(onLoginButtonClicked:)
-                                        inView:_keyboardScrollView];
+                                                  title:@"登录"
+                                                 target:self
+                                                 action:@selector(onLoginButtonClicked:)
+                                                 inView:_keyboardScrollView];
     loginButton.backgroundColor =  kColorWithRGB(231, 81, 82);
     loginButton.layer.cornerRadius = 4;
     self.view.backgroundColor = kColorWithRGB(250, 250, 250);
@@ -77,7 +80,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    _phoneTextField.text = [kUserDefaults objectForKey:kUserLoginPhoneKey];
+    _phoneTextField.text = [kUserDefaults objectForKey:kUserLoginNameKey];
     _passwordTextField.text = [kUserDefaults objectForKey:kUserPasswordKey];
     return;
 }
@@ -92,22 +95,45 @@
                              @"userPassword" : _passwordTextField.text,
                              @"versionInfo"  : [NSString appLocalVersion],
                              @"deviceInfo"   : [[[UIDevice currentDevice] systemName] stringByAppendingString:[[UIDevice currentDevice] systemVersion]]};
-
+    
+    // login request here
+    [ProgressHUD show:@"Logining.."];
     [HYBHttpManager loginWithPath:path params:params completion:^(BOOL isSuccess) {
-        
+        if (isSuccess) {
+            [ProgressHUD dismiss];
+            if (_loginCompletion) {
+                _loginCompletion(isSuccess);
+            }
+        } else {
+            [ProgressHUD showError:kLoadDataErrorMsg];
+        }
     } error:^(NSError *error) {
-        
+        [ProgressHUD showError:kNetworkErrorMsg];
     }];
     
     return;
 }
 
 - (void)onBackButtonClicked {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    return;
 }
 
+#pragma mark - Register
 - (void)onRegisterButtonClicked {
-    
+    // must as member variable, otherwise will be release forward
+    kWeakObject(self);
+    __weak typeof(_passwordTextField) pwdTextField = _passwordTextField;
+    __weak typeof(_phoneTextField) phoneTextField = _phoneTextField;
+    _registerController = [[HYBRegisterController alloc] initWithCompletion:^{
+        phoneTextField.text = [kUserDefaults objectForKey:kUserLoginNameKey];
+        pwdTextField.text = [kUserDefaults objectForKey:kUserPasswordKey];
+        
+        [weakObject dismissSemiModalView];
+    }];
+    _registerController.view.height = kScreenHeight - 150;
+    [self presentSemiViewController:_registerController];
+    return;
 }
 
 - (void)loginWithPresentController:(UIViewController *)presentController completion:(HYBLoginCompletion)completion {

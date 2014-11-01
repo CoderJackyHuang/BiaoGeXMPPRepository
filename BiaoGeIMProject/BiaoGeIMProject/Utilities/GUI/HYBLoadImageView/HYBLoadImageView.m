@@ -9,14 +9,16 @@
 #import "HYBLoadImageView.h"
 #import "UIImageView+WebCache.h"
 
-@interface HYBLoadImageView ()
+@interface HYBLoadImageView () {
+    BOOL _isCircle;
+}
 
 @end
 
 @implementation HYBLoadImageView
 
 + (void)initialize {
-    [SDWebImageManager.sharedManager.imageDownloader setValue:@"PersonalShoppingMall" forHTTPHeaderField:@"AppName"];
+    [SDWebImageManager.sharedManager.imageDownloader setValue:@"BiaoGeIMProject" forHTTPHeaderField:@"AppName"];
     SDWebImageManager.sharedManager.imageDownloader.executionOrder = SDWebImageDownloaderLIFOExecutionOrder;
     return;
 }
@@ -32,12 +34,26 @@
 
 - (id)initWithFrame:(CGRect)frame showLoading:(BOOL)showLoading {
     if (self = [super initWithFrame:frame]) {
-        _showLoading = showLoading;
-        // 这里关闭掉
-        _showLoading = NO;
         self.contentMode = UIViewContentModeScaleAspectFill;
     }
     return self;
+}
+
+- (BOOL)isCircle {
+    return _isCircle;
+}
+
+- (void)setIsCircle:(BOOL)isCircle {
+    _isCircle = isCircle;
+    
+    if (isCircle) {
+        self.layer.cornerRadius = self.width / 2.0;
+        self.clipsToBounds = YES;
+        self.layer.masksToBounds = YES;
+    } else {
+        self.layer.cornerRadius = 0.0;
+    }
+    return;
 }
 
 - (void)setImageWithURLString:(NSString *)urlString placeholder:(NSString *)placeholder {

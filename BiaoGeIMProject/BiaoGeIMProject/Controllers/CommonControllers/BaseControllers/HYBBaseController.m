@@ -53,6 +53,13 @@
     return;
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    [_httpRequest cancelRequest];
+    return;
+}
+
 - (void)addLeftButtonWithTitle:(NSString *)title action:(SEL)action {
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:title
                                                              style:UIBarButtonItemStylePlain

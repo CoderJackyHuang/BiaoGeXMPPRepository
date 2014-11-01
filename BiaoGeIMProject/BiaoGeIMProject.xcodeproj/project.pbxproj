@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6731459F1A047D9400EBC88E /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6731459C1A047D9400EBC88E /* ProgressHUD.bundle */; };
+		673145A01A047D9400EBC88E /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6731459E1A047D9400EBC88E /* ProgressHUD.m */; };
+		673145A41A04814500EBC88E /* HYBRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145A31A04814500EBC88E /* HYBRegisterController.m */; };
+		673145AC1A0487AD00EBC88E /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145AB1A0487AD00EBC88E /* UIViewController+KNSemiModal.m */; };
+		673145B01A04932200EBC88E /* HYBHttpManager+Discover.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145AF1A04932200EBC88E /* HYBHttpManager+Discover.m */; };
+		673145B41A04944C00EBC88E /* HYBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145B31A04944C00EBC88E /* HYBUserModel.m */; };
+		673145B81A04954E00EBC88E /* HYBBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145B71A04954E00EBC88E /* HYBBaseModel.m */; };
+		673145BF1A04A50400EBC88E /* HYBParentTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145BE1A04A50400EBC88E /* HYBParentTableController.m */; };
+		673145C31A04A53D00EBC88E /* HYBRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145C21A04A53D00EBC88E /* HYBRefreshController.m */; };
+		673145C71A04B40800EBC88E /* StyledTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145C61A04B40800EBC88E /* StyledTableViewCell.m */; };
+		673145D91A04B62200EBC88E /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 673145C91A04B62200EBC88E /* MJRefresh.bundle */; };
+		673145DA1A04B62200EBC88E /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145CC1A04B62200EBC88E /* MJRefreshBaseView.m */; };
+		673145DB1A04B62200EBC88E /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145CE1A04B62200EBC88E /* MJRefreshConst.m */; };
+		673145DC1A04B62200EBC88E /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145D01A04B62200EBC88E /* MJRefreshFooterView.m */; };
+		673145DD1A04B62200EBC88E /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145D21A04B62200EBC88E /* MJRefreshHeaderView.m */; };
+		673145DE1A04B62200EBC88E /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145D41A04B62200EBC88E /* UIScrollView+MJExtension.m */; };
+		673145DF1A04B62200EBC88E /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145D61A04B62200EBC88E /* UIScrollView+MJRefresh.m */; };
+		673145E01A04B62200EBC88E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145D81A04B62200EBC88E /* UIView+MJExtension.m */; };
+		673145E61A04C24A00EBC88E /* HYBUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145E51A04C24A00EBC88E /* HYBUserCell.m */; };
+		673145E81A04C26200EBC88E /* HYBUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673145E71A04C26200EBC88E /* HYBUserCell.xib */; };
 		A8AD24E81A031BEC0059B43A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD24E71A031BEC0059B43A /* main.m */; };
 		A8AD24EB1A031BEC0059B43A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD24EA1A031BEC0059B43A /* AppDelegate.m */; };
 		A8AD24F11A031BEC0059B43A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AD24EF1A031BEC0059B43A /* Main.storyboard */; };
@@ -380,6 +400,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6731459C1A047D9400EBC88E /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		6731459D1A047D9400EBC88E /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		6731459E1A047D9400EBC88E /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		673145A21A04814500EBC88E /* HYBRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBRegisterController.h; path = Controllers/CommonControllers/LoginAndRegister/RegisterController/HYBRegisterController.h; sourceTree = "<group>"; };
+		673145A31A04814500EBC88E /* HYBRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBRegisterController.m; path = Controllers/CommonControllers/LoginAndRegister/RegisterController/HYBRegisterController.m; sourceTree = "<group>"; };
+		673145AA1A0487AD00EBC88E /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
+		673145AB1A0487AD00EBC88E /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		673145AE1A04932200EBC88E /* HYBHttpManager+Discover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HYBHttpManager+Discover.h"; path = "Utilities/Network/HYBHttpManager+Discover.h"; sourceTree = "<group>"; };
+		673145AF1A04932200EBC88E /* HYBHttpManager+Discover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HYBHttpManager+Discover.m"; path = "Utilities/Network/HYBHttpManager+Discover.m"; sourceTree = "<group>"; };
+		673145B21A04944C00EBC88E /* HYBUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBUserModel.h; path = Models/CommonModels/HYBUserModel.h; sourceTree = "<group>"; };
+		673145B31A04944C00EBC88E /* HYBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBUserModel.m; path = Models/CommonModels/HYBUserModel.m; sourceTree = "<group>"; };
+		673145B61A04954E00EBC88E /* HYBBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBBaseModel.h; path = Models/CommonModels/HYBBaseModel.h; sourceTree = "<group>"; };
+		673145B71A04954E00EBC88E /* HYBBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBBaseModel.m; path = Models/CommonModels/HYBBaseModel.m; sourceTree = "<group>"; };
+		673145BD1A04A50400EBC88E /* HYBParentTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBParentTableController.h; path = Controllers/CommonControllers/BaseControllers/HYBParentTableController.h; sourceTree = "<group>"; };
+		673145BE1A04A50400EBC88E /* HYBParentTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBParentTableController.m; path = Controllers/CommonControllers/BaseControllers/HYBParentTableController.m; sourceTree = "<group>"; };
+		673145C11A04A53D00EBC88E /* HYBRefreshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBRefreshController.h; path = Controllers/CommonControllers/BaseControllers/HYBRefreshController.h; sourceTree = "<group>"; };
+		673145C21A04A53D00EBC88E /* HYBRefreshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBRefreshController.m; path = Controllers/CommonControllers/BaseControllers/HYBRefreshController.m; sourceTree = "<group>"; };
+		673145C51A04B40800EBC88E /* StyledTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyledTableViewCell.h; sourceTree = "<group>"; };
+		673145C61A04B40800EBC88E /* StyledTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyledTableViewCell.m; sourceTree = "<group>"; };
+		673145C91A04B62200EBC88E /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		673145CA1A04B62200EBC88E /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		673145CB1A04B62200EBC88E /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		673145CC1A04B62200EBC88E /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		673145CD1A04B62200EBC88E /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		673145CE1A04B62200EBC88E /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		673145CF1A04B62200EBC88E /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		673145D01A04B62200EBC88E /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		673145D11A04B62200EBC88E /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		673145D21A04B62200EBC88E /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		673145D31A04B62200EBC88E /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		673145D41A04B62200EBC88E /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		673145D51A04B62200EBC88E /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		673145D61A04B62200EBC88E /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		673145D71A04B62200EBC88E /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		673145D81A04B62200EBC88E /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		673145E41A04C24A00EBC88E /* HYBUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBUserCell.h; path = Views/Cells/DiscoverCells/UserCell/HYBUserCell.h; sourceTree = "<group>"; };
+		673145E51A04C24A00EBC88E /* HYBUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBUserCell.m; path = Views/Cells/DiscoverCells/UserCell/HYBUserCell.m; sourceTree = "<group>"; };
+		673145E71A04C26200EBC88E /* HYBUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HYBUserCell.xib; path = Views/Cells/DiscoverCells/UserCell/HYBUserCell.xib; sourceTree = "<group>"; };
 		A8AD24E21A031BEB0059B43A /* BiaoGeIMProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiaoGeIMProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AD24E61A031BEC0059B43A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AD24E71A031BEC0059B43A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -997,6 +1055,166 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6731459B1A047D9400EBC88E /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6731459C1A047D9400EBC88E /* ProgressHUD.bundle */,
+				6731459D1A047D9400EBC88E /* ProgressHUD.h */,
+				6731459E1A047D9400EBC88E /* ProgressHUD.m */,
+			);
+			name = ProgressHUD;
+			path = OpenSourceLibraries/ProgressHUD;
+			sourceTree = "<group>";
+		};
+		673145A11A04810500EBC88E /* RegisterController */ = {
+			isa = PBXGroup;
+			children = (
+				673145A21A04814500EBC88E /* HYBRegisterController.h */,
+				673145A31A04814500EBC88E /* HYBRegisterController.m */,
+			);
+			name = RegisterController;
+			sourceTree = "<group>";
+		};
+		673145A91A0487AD00EBC88E /* UIViewController + Ext */ = {
+			isa = PBXGroup;
+			children = (
+				673145AA1A0487AD00EBC88E /* UIViewController+KNSemiModal.h */,
+				673145AB1A0487AD00EBC88E /* UIViewController+KNSemiModal.m */,
+			);
+			path = "UIViewController + Ext";
+			sourceTree = "<group>";
+		};
+		673145AD1A0492C500EBC88E /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				673145AE1A04932200EBC88E /* HYBHttpManager+Discover.h */,
+				673145AF1A04932200EBC88E /* HYBHttpManager+Discover.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		673145B11A04942200EBC88E /* CommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				673145B51A04951F00EBC88E /* BaseModel */,
+				673145B91A0495EB00EBC88E /* UserModel */,
+			);
+			name = CommonModels;
+			sourceTree = "<group>";
+		};
+		673145B51A04951F00EBC88E /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				673145B61A04954E00EBC88E /* HYBBaseModel.h */,
+				673145B71A04954E00EBC88E /* HYBBaseModel.m */,
+			);
+			name = BaseModel;
+			sourceTree = "<group>";
+		};
+		673145B91A0495EB00EBC88E /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				673145B21A04944C00EBC88E /* HYBUserModel.h */,
+				673145B31A04944C00EBC88E /* HYBUserModel.m */,
+			);
+			name = UserModel;
+			sourceTree = "<group>";
+		};
+		673145BA1A0495FB00EBC88E /* HttpManager */ = {
+			isa = PBXGroup;
+			children = (
+				A8AD294D1A035CDE0059B43A /* HYBHttpManager.h */,
+				A8AD294E1A035CDE0059B43A /* HYBHttpManager.m */,
+			);
+			name = HttpManager;
+			sourceTree = "<group>";
+		};
+		673145BB1A04A4CE00EBC88E /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				A8AD278A1A03324C0059B43A /* HYBBaseController.h */,
+				A8AD278B1A03324C0059B43A /* HYBBaseController.m */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
+		673145BC1A04A4D800EBC88E /* ParentTableController */ = {
+			isa = PBXGroup;
+			children = (
+				673145BD1A04A50400EBC88E /* HYBParentTableController.h */,
+				673145BE1A04A50400EBC88E /* HYBParentTableController.m */,
+			);
+			name = ParentTableController;
+			sourceTree = "<group>";
+		};
+		673145C01A04A52200EBC88E /* RefreshController */ = {
+			isa = PBXGroup;
+			children = (
+				673145C11A04A53D00EBC88E /* HYBRefreshController.h */,
+				673145C21A04A53D00EBC88E /* HYBRefreshController.m */,
+			);
+			name = RefreshController;
+			sourceTree = "<group>";
+		};
+		673145C41A04B40800EBC88E /* StyledTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				673145C51A04B40800EBC88E /* StyledTableViewCell.h */,
+				673145C61A04B40800EBC88E /* StyledTableViewCell.m */,
+			);
+			path = StyledTableViewCell;
+			sourceTree = "<group>";
+		};
+		673145C81A04B62200EBC88E /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				673145C91A04B62200EBC88E /* MJRefresh.bundle */,
+				673145CA1A04B62200EBC88E /* MJRefresh.h */,
+				673145CB1A04B62200EBC88E /* MJRefreshBaseView.h */,
+				673145CC1A04B62200EBC88E /* MJRefreshBaseView.m */,
+				673145CD1A04B62200EBC88E /* MJRefreshConst.h */,
+				673145CE1A04B62200EBC88E /* MJRefreshConst.m */,
+				673145CF1A04B62200EBC88E /* MJRefreshFooterView.h */,
+				673145D01A04B62200EBC88E /* MJRefreshFooterView.m */,
+				673145D11A04B62200EBC88E /* MJRefreshHeaderView.h */,
+				673145D21A04B62200EBC88E /* MJRefreshHeaderView.m */,
+				673145D31A04B62200EBC88E /* UIScrollView+MJExtension.h */,
+				673145D41A04B62200EBC88E /* UIScrollView+MJExtension.m */,
+				673145D51A04B62200EBC88E /* UIScrollView+MJRefresh.h */,
+				673145D61A04B62200EBC88E /* UIScrollView+MJRefresh.m */,
+				673145D71A04B62200EBC88E /* UIView+MJExtension.h */,
+				673145D81A04B62200EBC88E /* UIView+MJExtension.m */,
+			);
+			name = MJRefresh;
+			path = OpenSourceLibraries/MJRefresh;
+			sourceTree = "<group>";
+		};
+		673145E11A04C20700EBC88E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				673145E21A04C21400EBC88E /* DiscoverCells */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		673145E21A04C21400EBC88E /* DiscoverCells */ = {
+			isa = PBXGroup;
+			children = (
+				673145E31A04C21E00EBC88E /* UserCell */,
+			);
+			name = DiscoverCells;
+			sourceTree = "<group>";
+		};
+		673145E31A04C21E00EBC88E /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				673145E41A04C24A00EBC88E /* HYBUserCell.h */,
+				673145E51A04C24A00EBC88E /* HYBUserCell.m */,
+				673145E71A04C26200EBC88E /* HYBUserCell.xib */,
+			);
+			name = UserCell;
+			sourceTree = "<group>";
+		};
 		A8AD24D91A031BEB0059B43A = {
 			isa = PBXGroup;
 			children = (
@@ -1076,6 +1294,7 @@
 		A8AD250C1A031C630059B43A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				673145E11A04C20700EBC88E /* Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1083,6 +1302,7 @@
 		A8AD250D1A031C660059B43A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				673145B11A04942200EBC88E /* CommonModels */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1090,6 +1310,8 @@
 		A8AD250E1A031C6C0059B43A /* OpenSourceLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				673145C81A04B62200EBC88E /* MJRefresh */,
+				6731459B1A047D9400EBC88E /* ProgressHUD */,
 				A8AD29151A0354D80059B43A /* SDWebImage */,
 				A8AD27481A032D670059B43A /* FMDB */,
 				A8AD271E1A032AA70059B43A /* ASIHttpRequest */,
@@ -2181,8 +2403,9 @@
 		A8AD27881A0332110059B43A /* BaseControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A8AD278A1A03324C0059B43A /* HYBBaseController.h */,
-				A8AD278B1A03324C0059B43A /* HYBBaseController.m */,
+				673145C01A04A52200EBC88E /* RefreshController */,
+				673145BC1A04A4D800EBC88E /* ParentTableController */,
+				673145BB1A04A4CE00EBC88E /* BaseController */,
 			);
 			name = BaseControllers;
 			sourceTree = "<group>";
@@ -2380,6 +2603,7 @@
 		A8AD28C61A033F920059B43A /* LoginAndRegister */ = {
 			isa = PBXGroup;
 			children = (
+				673145A11A04810500EBC88E /* RegisterController */,
 				A8AD290B1A0342580059B43A /* LoginController */,
 			);
 			name = LoginAndRegister;
@@ -2388,6 +2612,7 @@
 		A8AD28E11A0341160059B43A /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				673145A91A0487AD00EBC88E /* UIViewController + Ext */,
 				A8AD29111A03548C0059B43A /* NSFileManager + Ext */,
 				A8AD28E21A0341160059B43A /* NSObject + Ext */,
 				A8AD28E71A0341160059B43A /* NSString + Ext */,
@@ -2451,6 +2676,7 @@
 		A8AD28F51A0341160059B43A /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				673145C41A04B40800EBC88E /* StyledTableViewCell */,
 				A8AD28F61A0341160059B43A /* HYBKeyboardScrollView */,
 				A8AD28F91A0341160059B43A /* HYBLoadImageView */,
 				A8AD28FC1A0341160059B43A /* HYBUIMaker */,
@@ -2579,8 +2805,8 @@
 		A8AD29571A035D710059B43A /* ModuleRequest */ = {
 			isa = PBXGroup;
 			children = (
-				A8AD294D1A035CDE0059B43A /* HYBHttpManager.h */,
-				A8AD294E1A035CDE0059B43A /* HYBHttpManager.m */,
+				673145AD1A0492C500EBC88E /* Discover */,
+				673145BA1A0495FB00EBC88E /* HttpManager */,
 			);
 			name = ModuleRequest;
 			sourceTree = "<group>";
@@ -2709,9 +2935,11 @@
 				A8AD28B01A0333D00059B43A /* tabbar_me@2x.png in Resources */,
 				A8AD28391A0333D00059B43A /* yeh手势.gif in Resources */,
 				A8AD28A61A0333D00059B43A /* tabbar_contactsHL@2x.png in Resources */,
+				6731459F1A047D9400EBC88E /* ProgressHUD.bundle in Resources */,
 				A8AD28701A0333D00059B43A /* grayArrow.png in Resources */,
 				A8AD284D1A0333D00059B43A /* 害羞.gif in Resources */,
 				A8AD28711A0333D00059B43A /* grayArrow@2x.png in Resources */,
+				673145D91A04B62200EBC88E /* MJRefresh.bundle in Resources */,
 				A8AD28361A0333D00059B43A /* good手势.gif in Resources */,
 				A8AD28621A0333D00059B43A /* 0_mid_c@2x.png in Resources */,
 				A8AD28651A0333D00059B43A /* 0_right_n@2x.png in Resources */,
@@ -2745,6 +2973,7 @@
 				A8AD28BB1A0333D00059B43A /* ToolViewKeyboard@2x.png in Resources */,
 				A8AD28921A0333D00059B43A /* playback_close@2x.png in Resources */,
 				A8AD287C1A0333D00059B43A /* head_temp18.jpg in Resources */,
+				673145E81A04C26200EBC88E /* HYBUserCell.xib in Resources */,
 				A8AD285C1A0333D00059B43A /* 送花.gif in Resources */,
 				A8AD28761A0333D00059B43A /* head_temp12.jpg in Resources */,
 				A8AD28451A0333D00059B43A /* 喜欢.gif in Resources */,
@@ -2839,6 +3068,7 @@
 				A8AD29391A0354D80059B43A /* SDImageCache.m in Sources */,
 				A8AD26D41A032A6B0059B43A /* XMPPvCardTempEmail.m in Sources */,
 				A8AD27081A032A6B0059B43A /* GCDMulticastDelegate.m in Sources */,
+				673145B81A04954E00EBC88E /* HYBBaseModel.m in Sources */,
 				A8AD26C81A032A6B0059B43A /* XMPPMessage+XEP0045.m in Sources */,
 				A8AD29381A0354D80059B43A /* NSData+ImageContentType.m in Sources */,
 				A8AD293D1A0354D80059B43A /* SDWebImageDownloaderOperation.m in Sources */,
@@ -2872,6 +3102,7 @@
 				A8AD26DA1A032A6B0059B43A /* XMPPIQ+XEP_0060.m in Sources */,
 				A8AD26E71A032A6B0059B43A /* XMPPCapabilitiesCoreDataStorage.m in Sources */,
 				A8AD26EC1A032A6B0059B43A /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */,
+				673145C71A04B40800EBC88E /* StyledTableViewCell.m in Sources */,
 				A8AD29081A0341160059B43A /* HYBKeyboardScrollView.m in Sources */,
 				A8AD26C21A032A6B0059B43A /* XMPPRoomHybridStorage.m in Sources */,
 				A8AD26F81A032A6B0059B43A /* XMPPStreamManagement.m in Sources */,
@@ -2883,6 +3114,8 @@
 				A8AD26DC1A032A6B0059B43A /* TURNSocket.m in Sources */,
 				A8AD26AD1A032A6B0059B43A /* XMPPGroupCoreDataStorageObject.m in Sources */,
 				A8AD269D1A032A6B0059B43A /* NSData+XMPP.m in Sources */,
+				673145C31A04A53D00EBC88E /* HYBRefreshController.m in Sources */,
+				673145E01A04B62200EBC88E /* UIView+MJExtension.m in Sources */,
 				A8AD26BB1A032A6B0059B43A /* XMPPLastActivity.m in Sources */,
 				A8AD26C91A032A6B0059B43A /* XMPPMUC.m in Sources */,
 				A8AD27931A0332D60059B43A /* HYBGroupChatController.m in Sources */,
@@ -2893,8 +3126,10 @@
 				A8AD29421A0354D80059B43A /* UIImage+MultiFormat.m in Sources */,
 				A8AD26FC1A032A6B0059B43A /* XMPPTime.m in Sources */,
 				A8AD27151A032A6B0059B43A /* DDDispatchQueueLogFormatter.m in Sources */,
+				673145B41A04944C00EBC88E /* HYBUserModel.m in Sources */,
 				A8AD26D51A032A6B0059B43A /* XMPPvCardTempLabel.m in Sources */,
 				A8AD26DD1A032A6B0059B43A /* XMPPIQ+XEP_0066.m in Sources */,
+				673145B01A04932200EBC88E /* HYBHttpManager+Discover.m in Sources */,
 				A8AD26A51A032A6B0059B43A /* XMPPParser.m in Sources */,
 				A8AD26991A032A6B0059B43A /* XMPPPlainAuthentication.m in Sources */,
 				A8AD26CE1A032A6B0059B43A /* XMPPvCardCoreDataStorageObject.m in Sources */,
@@ -2920,6 +3155,7 @@
 				A8AD26AF1A032A6B0059B43A /* XMPPRoster.xcdatamodel in Sources */,
 				A8AD29511A035CDE0059B43A /* HYBHttpManager.m in Sources */,
 				A8AD27531A032D670059B43A /* FMDatabase.m in Sources */,
+				673145E61A04C24A00EBC88E /* HYBUserCell.m in Sources */,
 				A8AD27451A032AA70059B43A /* ASIWebPageRequest.m in Sources */,
 				A8AD27421A032AA70059B43A /* ASIHTTPRequest.m in Sources */,
 				A8AD26D81A032A6B0059B43A /* NSXMLElement+XEP_0059.m in Sources */,
@@ -2928,6 +3164,7 @@
 				A8AD26B01A032A6B0059B43A /* XMPPRosterCoreDataStorage.m in Sources */,
 				A8AD26CA1A032A6B0059B43A /* XMPPRoom.m in Sources */,
 				A8AD252C1A031D300059B43A /* RecordAudio.m in Sources */,
+				673145DA1A04B62200EBC88E /* MJRefreshBaseView.m in Sources */,
 				A8AD27411A032AA70059B43A /* ASIFormDataRequest.m in Sources */,
 				A8AD293A1A0354D80059B43A /* SDWebImageCompat.m in Sources */,
 				A8AD26F91A032A6B0059B43A /* XMPPAutoPing.m in Sources */,
@@ -2941,6 +3178,8 @@
 				A8AD26A01A032A6B0059B43A /* XMPPElement.m in Sources */,
 				A8AD26DB1A032A6B0059B43A /* XMPPPubSub.m in Sources */,
 				A8AD26FB1A032A6B0059B43A /* XMPPAutoTime.m in Sources */,
+				673145AC1A0487AD00EBC88E /* UIViewController+KNSemiModal.m in Sources */,
+				673145DF1A04B62200EBC88E /* UIScrollView+MJRefresh.m in Sources */,
 				A8AD279C1A0333120059B43A /* HYBMessageController.m in Sources */,
 				A8AD27991A0332FD0059B43A /* HYBFriendController.m in Sources */,
 				A8AD26EE1A032A6B0059B43A /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
@@ -2952,6 +3191,7 @@
 				A8AD26A91A032A6B0059B43A /* XMPPCoreDataStorage.m in Sources */,
 				A8AD26D71A032A6B0059B43A /* XMPPvCardTempTel.m in Sources */,
 				A8AD270A1A032A6B0059B43A /* XMPPIDTracker.m in Sources */,
+				673145A01A047D9400EBC88E /* ProgressHUD.m in Sources */,
 				A8AD27111A032A6B0059B43A /* DDFileLogger.m in Sources */,
 				A8AD27131A032A6B0059B43A /* DDTTYLogger.m in Sources */,
 				A8AD26B31A032A6B0059B43A /* XMPPRosterMemoryStorage.m in Sources */,
@@ -2960,6 +3200,7 @@
 				A8AD26F31A032A6B0059B43A /* XMPPMessage+XEP_0184.m in Sources */,
 				A8AD26BD1A032A6B0059B43A /* XMPPRoom.xcdatamodeld in Sources */,
 				A8AD27071A032A6B0059B43A /* DDList.m in Sources */,
+				673145A41A04814500EBC88E /* HYBRegisterController.m in Sources */,
 				A8AD27431A032AA70059B43A /* ASIInputStream.m in Sources */,
 				A8AD273E1A032AA70059B43A /* ASIDataCompressor.m in Sources */,
 				A8AD27541A032D670059B43A /* FMDatabaseAdditions.m in Sources */,
@@ -2982,6 +3223,8 @@
 				A8AD270B1A032A6B0059B43A /* XMPPSRVResolver.m in Sources */,
 				A8AD27561A032D670059B43A /* FMDatabaseQueue.m in Sources */,
 				A8AD26C51A032A6B0059B43A /* XMPPRoomMemoryStorage.m in Sources */,
+				673145DE1A04B62200EBC88E /* UIScrollView+MJExtension.m in Sources */,
+				673145DD1A04B62200EBC88E /* MJRefreshHeaderView.m in Sources */,
 				A8AD290F1A0342960059B43A /* HYBLoginController.m in Sources */,
 				A8AD29071A0341160059B43A /* UIView+Ext.m in Sources */,
 				A8AD27061A032A6B0059B43A /* NSXMLElement+XEP_0335.m in Sources */,
@@ -3017,9 +3260,12 @@
 				A8AD269C1A032A6B0059B43A /* XMPPXOAuth2Google.m in Sources */,
 				A8AD29061A0341160059B43A /* UIColor+ColorExtension.m in Sources */,
 				A8AD26F01A032A6B0059B43A /* XMPPvCardAvatarModule.m in Sources */,
+				673145DB1A04B62200EBC88E /* MJRefreshConst.m in Sources */,
 				A8AD26A31A032A6B0059B43A /* XMPPMessage.m in Sources */,
 				A8AD26F71A032A6B0059B43A /* XMPPStreamManagementStanzas.m in Sources */,
+				673145DC1A04B62200EBC88E /* MJRefreshFooterView.m in Sources */,
 				A8AD26E11A032A6B0059B43A /* XMPPDateTimeProfiles.m in Sources */,
+				673145BF1A04A50400EBC88E /* HYBParentTableController.m in Sources */,
 				A8AD26A21A032A6B0059B43A /* XMPPJID.m in Sources */,
 				A8AD278C1A03324C0059B43A /* HYBBaseController.m in Sources */,
 				A8AD26BA1A032A6B0059B43A /* XMPPIQ+LastActivity.m in Sources */,
