@@ -8,6 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HYBXMPPManager : NSObject
+@class FMDatabase;
+
+@interface HYBXMPPManager : NSObject {
+    @private
+    FMDatabase *_db;
+    NSString   *_oldUserId;
+}
+
+/*!
+ * @brief singleton method for creating the HYBXMPPManager object only once
+ */
++ (HYBXMPPManager *)shared;
+
+/*!
+ * @brief open the database accounding to the user id
+ * @param userId the unique identifier of the database name
+ * @return the opened database object
+ */
+- (FMDatabase *)databaseWithUserId:(NSString *)userId;
 
 @end

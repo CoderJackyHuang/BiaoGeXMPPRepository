@@ -25,14 +25,9 @@
 + (NSString *)tmpPath;
 
 /*!
- * @brief 获取用户登录的信息存储的缓存路径
+ * @brief generate UUID
  */
-+ (NSString *)userAccountInfoPath;
-
-/*!
- * @brief 获取首页存储路径
- */
-+ (NSString *)homeAppListPath;
++ (NSString *)UUID;
 
 /*!
  * @brief 获取其它的缓存路径

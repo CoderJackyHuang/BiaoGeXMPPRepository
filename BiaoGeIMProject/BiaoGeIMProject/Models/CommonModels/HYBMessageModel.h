@@ -57,9 +57,44 @@ typedef NS_ENUM(NSUInteger, HYBMessageType) {
 - (NSDictionary *)toDictionary;
 
 /*!
+ * @brief convert the dictionary values to the model object properties
+ */
+- (void)fromDictionary:(NSDictionary *)dict;
+
+/*!
  * @brief get the last send or receive message content type, values is only being [图片],[语音],[表情], content plain text
  * @return one of [图片],[语音],[表情],content plain text
  */
 - (NSString *)lastContentType;
+
+///
+/// operate with database functions
+///
+
+/*!
+ * @brief save the current model object to the database
+ * @return NO is saving fail and YES is saving success.
+ */
+- (BOOL)saveToDatabase;
+
+//-(BOOL)saveRoomMsg:(NSString*)room;
+//+(BOOL)deleteMessageById:(NSNumber*)aMessageNo;
+//+(BOOL)merge:(JXMessageObject*)aMessage;
+//+(BOOL)updateNewMsgsTo0:(NSString*)tableName;
+
+//获取某联系人聊天记录
+//+(NSMutableArray *)fetchMessageListWithUser:(NSString *)userId byPage:(int)pageIndex;
+
+/*!
+ * @brief fetch recent chat records from the database, seperated by page index
+ * @param pageIndex the index of page
+ * @return the list of the chat records of the user
+ */
++ (NSMutableArray *)fetchRecentChatWithPageIndex:(NSUInteger)pageIndex;
+
+//+(void)fromRs:(JXMessageObject*)p rs:(FMResultSet*)rs;
+
+//-(BOOL)updateIsRead:(BOOL)b;
+
 
 @end

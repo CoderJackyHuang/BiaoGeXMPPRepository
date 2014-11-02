@@ -84,6 +84,9 @@ typedef void (^HYBErrorBlock)(NSError *error);
 #define kNotificationCenter  [NSNotificationCenter defaultCenter]
 #define kPostNotificationWithName(notificationName) \
 [kNotificationCenter postNotificationName:notificationName object:nil userInfo:nil];
+#define kPostNotificationWithName(notificationName, userInfo) \
+[kNotificationCenter postNotificationName:notificationName object:nil userInfo:userInfo];
+
 // @} end
 
 // @{
