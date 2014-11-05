@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A8BC1186-8809-4D8C-9B30-0C29D6E30FBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BiaoGeIMProject</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3864217BD5A4941CF1A4FCCD3B527A5975A58494</key>
+		<string>https://github.com/632840804/BiaoGeXMPPRepository.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BiaoGeIMProject/BiaoGeIMProject.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3864217BD5A4941CF1A4FCCD3B527A5975A58494</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/632840804/BiaoGeXMPPRepository.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3864217BD5A4941CF1A4FCCD3B527A5975A58494</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3864217BD5A4941CF1A4FCCD3B527A5975A58494</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BiaoGeXMPPRepository</string>
+		</dict>
+	</array>
+</dict>
+</plist>

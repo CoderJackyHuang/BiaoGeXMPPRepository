@@ -25,6 +25,22 @@
     return [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"];
 }
 
+
+/*!
+ * @brief generate UUID
+ */
++ (NSString *)UUID {
+    NSString *result = nil;
+    
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    if (uuid) {
+        result = (__bridge_transfer NSString *)CFUUIDCreateString(NULL, uuid);
+        CFRelease(uuid);
+    }
+    
+    return result;
+}
+
 #pragma mark - 获取缓存路径
 /*!
  * @brief 获取其它的缓存路径

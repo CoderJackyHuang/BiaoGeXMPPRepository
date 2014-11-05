@@ -10,11 +10,15 @@
 #define BiaoGeIMProject_Define_h
 
 // 用户信息
-#define kUserIdKey @"myUserIdKey"
-#define kUserPasswordKey  @"kUserPasswordKey"
-#define kUserNicknameKey  @"kUserNicknameKey"
-#define kUserHeadImageKey @"kUserHeadImageKey"
+#define kUserIdKey        @"userId"
+#define kUserPasswordKey  @"userPassword"
+#define kUserNicknameKey  @"userNickname"
+#define kUserHeadImageKey @"userHead"
 #define kUserLoginNameKey @"kUserLoginNameKey"
+#define kUserDescriptionKey @"userDescription"
+#define kUserRoomFlagKey  @"roomFlag"
+#define kUserNewMsgsKey   @"newMsgs"
+#define kUserTimeCreateKey @"timeCreate"
 
 // 通知
 #define kXMPPNewMsgNotifiction @"kXMPPNewMsgNotifiction"
