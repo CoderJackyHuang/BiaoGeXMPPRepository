@@ -29,6 +29,7 @@
 		673145E81A04C26200EBC88E /* HYBUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 673145E71A04C26200EBC88E /* HYBUserCell.xib */; };
 		673145ED1A04DAB400EBC88E /* HYBXMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145EC1A04DAB400EBC88E /* HYBXMPPManager.m */; };
 		673145F11A04E81C00EBC88E /* HYBMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 673145F01A04E81C00EBC88E /* HYBMessageModel.m */; };
+		67B68F5E1A0A2691000C348D /* HYBBaseUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B68F5D1A0A2691000C348D /* HYBBaseUserModel.m */; };
 		A8AD24E81A031BEC0059B43A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD24E71A031BEC0059B43A /* main.m */; };
 		A8AD24EB1A031BEC0059B43A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AD24EA1A031BEC0059B43A /* AppDelegate.m */; };
 		A8AD24F11A031BEC0059B43A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AD24EF1A031BEC0059B43A /* Main.storyboard */; };
@@ -444,6 +445,8 @@
 		673145EC1A04DAB400EBC88E /* HYBXMPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBXMPPManager.m; path = Utilities/Tools/XMPPManager/HYBXMPPManager.m; sourceTree = "<group>"; };
 		673145EF1A04E81C00EBC88E /* HYBMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBMessageModel.h; path = Models/CommonModels/HYBMessageModel.h; sourceTree = "<group>"; };
 		673145F01A04E81C00EBC88E /* HYBMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBMessageModel.m; path = Models/CommonModels/HYBMessageModel.m; sourceTree = "<group>"; };
+		67B68F5C1A0A2691000C348D /* HYBBaseUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HYBBaseUserModel.h; path = Models/CommonModels/HYBBaseUserModel.h; sourceTree = "<group>"; };
+		67B68F5D1A0A2691000C348D /* HYBBaseUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HYBBaseUserModel.m; path = Models/CommonModels/HYBBaseUserModel.m; sourceTree = "<group>"; };
 		A8AD24E21A031BEB0059B43A /* BiaoGeIMProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiaoGeIMProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AD24E61A031BEC0059B43A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AD24E71A031BEC0059B43A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1123,6 +1126,8 @@
 			children = (
 				673145B21A04944C00EBC88E /* HYBUserModel.h */,
 				673145B31A04944C00EBC88E /* HYBUserModel.m */,
+				67B68F5C1A0A2691000C348D /* HYBBaseUserModel.h */,
+				67B68F5D1A0A2691000C348D /* HYBBaseUserModel.m */,
 			);
 			name = UserModel;
 			sourceTree = "<group>";
@@ -3217,6 +3222,7 @@
 				673145DF1A04B62200EBC88E /* UIScrollView+MJRefresh.m in Sources */,
 				A8AD279C1A0333120059B43A /* HYBMessageController.m in Sources */,
 				A8AD27991A0332FD0059B43A /* HYBFriendController.m in Sources */,
+				67B68F5E1A0A2691000C348D /* HYBBaseUserModel.m in Sources */,
 				A8AD26EE1A032A6B0059B43A /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
 				A8AD26A41A032A6B0059B43A /* XMPPModule.m in Sources */,
 				A8AD273F1A032AA70059B43A /* ASIDataDecompressor.m in Sources */,

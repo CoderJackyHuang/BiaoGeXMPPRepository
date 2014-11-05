@@ -10,7 +10,7 @@
 #import "FMDatabase.h"
 #import "HYBXMPPManager.h"
 #import "NSData+XMPP.h"
-#import "HYBUserModel.h"
+#import "HYBBaseUserModel.h"
 
 #define kMessageTypeField @"type"
 #define kMessageFromUserIdField @"fromUserId"
@@ -207,19 +207,19 @@
         messageModel.timeSend = [rs dateForColumn:kMessageTimeSendField];
         messageModel.fromUserId = [rs stringForColumn:kUserIdKey];
         messageModel.toUserId = userId;
-//        
-//        HYBUserModel *userModel = [[HYBUserModel alloc] init];
-//        [userModel setUserId:[rs stringForColumn:kUserIdKey]];
-//        [userModel setUserNickname:[rs stringForColumn:kUserNicknameKey]];
-//        [userModel setUserHead:[rs stringForColumn:kUserHeadImageKey]];
-//        [userModel setUserDescription:[rs stringForColumn:kUserDescriptionKey]];
-//        [userModel setRoomFlag:[rs objectForColumnName:kUserRoomFlagKey]];
-//        
+        
+        HYBBaseUserModel *userModel = [[HYBBaseUserModel alloc] init];
+        [userModel setUserId:[rs stringForColumn:kUserIdKey]];
+        [userModel setUserNickname:[rs stringForColumn:kUserNicknameKey]];
+        [userModel setUserHead:[rs stringForColumn:kUserHeadImageKey]];
+        [userModel setUserDescription:[rs stringForColumn:kUserDescriptionKey]];
+        [userModel setRoomFlag:[rs objectForColumnName:kUserRoomFlagKey]];
+        
 //        JXMsgAndUserObject *unionObject=[JXMsgAndUserObject unionWithMessage:p andUser:user ];
 //        [messageList addObject:unionObject];
     }
  
-    }
+    return messageList;
 }
 
 @end
